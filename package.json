@@ -1,0 +1,20 @@
+{
+  "name": "my-project",
+  "version": "0.0.0",
+  "description": "Generate datasets with random data.",
+  "main": "lib/index.coffee",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/*.coffee"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "coffeescript": "^2.5.0",
+    "mocha": "^7.0.1",
+    "should": "^13.2.3"
+  }
+}
