@@ -26,7 +26,7 @@ OPTIONS
 
 COMMANDS
     users                   Generate users
-    shopping                Generate shopping
+    products                Generate products
 
 EXAMPLES
     masson user list --help Show this message
@@ -38,5 +38,3 @@ How to customize/initialize the environmment (conf files, docker images...)
 How to run the tests
 Undestanding the project layout
 ...
-
-

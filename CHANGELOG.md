@@ -1,6 +1,13 @@
 
+# Changelog
+
 ## Trunk
 
+generate: products and users
+
+## Project Initialisation
+
+Create changelog
 First unit test
 Project definition file, metadata (eg package.json, requirements.txt)
 Folder structure

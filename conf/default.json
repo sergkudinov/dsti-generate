@@ -2,5 +2,8 @@
   "output_dir": "./output",
   "users": {
     "length": 1000
+  },
+  "products": {
+    "length": 1000
   }
 }

@@ -10,3 +10,5 @@ describe 'configure', ->
       output_dir: path.join __dirname, '../output'
       users:
         length: 1000
+      products:
+        length: 1000
