@@ -1,6 +1,8 @@
 
 # MyProject
 
+[![Build Status](https://api.travis-ci.org/adaltas/dsti-generate.svg)](https://travis-ci.org/#!/adaltas/dsti-generate)
+
 Generate datasets with random data.
 
 Main functionnalites:
