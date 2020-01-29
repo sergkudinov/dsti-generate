@@ -10,18 +10,16 @@ Main functionnalites:
 
 ## Usage
 
-Run './bin/gen help' print:
+Run './bin/generate help' print:
 
 ```
-
 NAME
-    gen - Generate datasets with random data.
+    generate - Generate datasets with random data.
 
 SYNOPSIS
-    gen [options]
+    generate [options]
 
 OPTIONS
-    -g --group              Filter members of this group
     -h --help               Display help information
 
 COMMANDS
@@ -32,9 +30,17 @@ EXAMPLES
     masson user list --help Show this message
 ```
 
-## Developer section
+## Developer
 
 How to customize/initialize the environmment (conf files, docker images...)
-How to run the tests
 Undestanding the project layout
 ...
+
+How to run the tests:
+
+```
+# All the tests
+npm test
+# Selected tests
+npx mocha test/*.coffee
+```

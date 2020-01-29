@@ -16,5 +16,9 @@
     "coffeescript": "^2.5.0",
     "mocha": "^7.0.1",
     "should": "^13.2.3"
+  },
+  "dependencies": {
+    "mixme": "^0.3.5",
+    "parameters": "^0.7.2"
   }
 }
