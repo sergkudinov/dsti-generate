@@ -1,4 +1,16 @@
 language: node_js
 node_js:
-  - "10"
   - "12"
+script:
+  - ./bin/generate users -l 300
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: false
+  local-dir: output
+  on:
+    branch: master
+env:
+  global:
+  - secure: "bzCfeYKsEhhjVjNBrtgcFkvtA4mQ2NCS7d3BRRsVdIsS3t76mTu6zjtQ8bb3BYMafYTHw+NR5Q9E1dK0BNTnT2JFWv897VbbsP9y7HTfahd29IjiEeucfD4R/g5N9nfW0GguLa0i8+p0ftCMAGTsxDoTvNPHWKazUNa7UcXk6PuBVXX3jeC+2KD6Dr8iXHPqcY/ylQRPvfpq3q62XDZumj5JyTjBqQ7HsCP4Cu3RVNt+vSu9lfQAi7zQhAEXdi39g56oULJRDcRmeNGNZqmflkZjR9BJRb/nAXoweh3gAYejotqGd7/LCCraWH1pvp5TQ0FHKami3b5LRWsKhIsk+I+R1nBB5Ztwi8I2U13v6DDb49yWaKVSsC1AA4dS76xn/rsEs704OUrxZxBmNMd2ZnocTH3iBApzVFeYL8b2m4X0Few6771vz711SRofzJY2Ukv8W4UYqFq/Mxk9fYsbtBfWkH24kQwLI8nkKqE4meYCE7DPz4oz9HxLGx9V42PdLzMOlZNGWUv20g6UX3rWeRCCrGVBQg6kBsJ0RPS4WiufSuQAk+Ch+5bwvvGVhBVN8yTI1+siMP1+zg8EGyGkBDbL0TpesEAQnKb2ZFIa932PTKpoF+vqydIqjIg5XORBZeGK84TA41kSsskfg5br1ilfIwzw84f7o5fFrWrFD+U="
