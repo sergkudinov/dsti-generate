@@ -10,7 +10,7 @@ describe 'generate', ->
     it 'check the length property', ->
       await generate.users
         output_dir: "#{__dirname}/../output"
-        users: length: 10
+        length: 10
       output = await fs.readFile "#{__dirname}/../output/users.csv", 'utf8'
       output.trim().split('\n').length.should.eql 10
 
@@ -19,7 +19,7 @@ describe 'generate', ->
     it 'check the length property', ->
       await generate.products
         output_dir: "#{__dirname}/../output"
-        products: length: 10
+        length: 10
       output = await fs.readFile "#{__dirname}/../output/products.csv", 'utf8'
       output.trim().split('\n').length.should.eql 10
       

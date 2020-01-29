@@ -1,9 +1,10 @@
 {
-  "output_dir": "./output",
   "users": {
+    "output_dir": "./output",
     "length": 1000
   },
   "products": {
+    "output_dir": "./output",
     "length": 1000
   }
 }
