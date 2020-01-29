@@ -18,7 +18,7 @@ params =
           description: 'Output directory'
       route: ({params}) ->
         config = configure()
-        config.users.output_dir = null unless params.output
+        config.users.output_dir = params.output or null
         generate.users merge config.users, params
     'products':
       description: 'Generate products',
@@ -31,7 +31,7 @@ params =
           description: 'Output directory'
       route: () ->
         config = configure()
-        config.products.output_dir = null unless params.output
+        config.products.output_dir = params.output or null
         generate.products merge config.products, params
 
 parameters(params).route()

@@ -2,7 +2,9 @@ language: node_js
 node_js:
   - "12"
 script:
-  - ./bin/generate users -l 300 > output/users.csv
+  - ./bin/generate users -l 300 -o ./output
+  - pwd
+  - ls -l ./output
 deploy:
   provider: pages
   skip-cleanup: true
@@ -13,4 +15,4 @@ deploy:
     branch: master
 env:
   global:
-  - secure: "bzCfeYKsEhhjVjNBrtgcFkvtA4mQ2NCS7d3BRRsVdIsS3t76mTu6zjtQ8bb3BYMafYTHw+NR5Q9E1dK0BNTnT2JFWv897VbbsP9y7HTfahd29IjiEeucfD4R/g5N9nfW0GguLa0i8+p0ftCMAGTsxDoTvNPHWKazUNa7UcXk6PuBVXX3jeC+2KD6Dr8iXHPqcY/ylQRPvfpq3q62XDZumj5JyTjBqQ7HsCP4Cu3RVNt+vSu9lfQAi7zQhAEXdi39g56oULJRDcRmeNGNZqmflkZjR9BJRb/nAXoweh3gAYejotqGd7/LCCraWH1pvp5TQ0FHKami3b5LRWsKhIsk+I+R1nBB5Ztwi8I2U13v6DDb49yWaKVSsC1AA4dS76xn/rsEs704OUrxZxBmNMd2ZnocTH3iBApzVFeYL8b2m4X0Few6771vz711SRofzJY2Ukv8W4UYqFq/Mxk9fYsbtBfWkH24kQwLI8nkKqE4meYCE7DPz4oz9HxLGx9V42PdLzMOlZNGWUv20g6UX3rWeRCCrGVBQg6kBsJ0RPS4WiufSuQAk+Ch+5bwvvGVhBVN8yTI1+siMP1+zg8EGyGkBDbL0TpesEAQnKb2ZFIa932PTKpoF+vqydIqjIg5XORBZeGK84TA41kSsskfg5br1ilfIwzw84f7o5fFrWrFD+U="
+  - secure: "RN2QIUxwNa7yWM0B7LA2W+KUXronWsXwe6GZ4SkMLYUJ1BIMol+Bmq/UibeAAKcPe12wnzpcnG4Ww6EQ8YHukRNd6egzBSFblavt+b56Z/cSghykQat2QkPi3UsClyK+jV+7CMsxvvYOXAHngFGZ4Qlkmk2pTkyeZOV+FP/6yLHAJmyj4J/nE3+YucGv8Xq6Hv4b64W3RHB1aTVqokGsM9qdWx06haZwqU8YoKBpw+Acg0CoXS+piZm3vuqcArqu6g5zIigitgOJJ2dcRLTePE7xGgCqkxGmeXlFsU2i/VVcvrMCOD0tdHsrKKcivDKBbZJBUOAjU/jWKMRoKG3/U1NbRWO5ZLkkybkQUFXwk3FZBLULV3rQ5eDKlqnT0gPHLkDpfe3Nn6Lz91GjTDzajN8I/41kYByvTm8igkGxTDRd4QH/c58Qzfldn8qGfIfPitro+Q8yAcyRs5gRxIquzE7jY6LV64WRFQVjqG5DBZgkDedk++/RFPEqQMfe6V877zNNRZytN67RoscxyZObeAFj9oE9i861zmOg0dpBRL5Jdj/LQOKpEtXOYU4HJigwNhleLkfCIEX7y0Mou0CpTTCTpgdT2MBWhB0gm212NSUBARwVkTUp+3wvU2PK0UFA79canz7o0g58hEXiS4zsBXqKyWSJ1JAYJboe+lRORVw="
